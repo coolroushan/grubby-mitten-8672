@@ -1,0 +1,14 @@
+#main{
+    display: flex;
+    justify-content: space-between;
+}
+#main>#menu-list{
+    width: 23%;
+    border: 1px solid red;
+    height: 100px;
+}
+#main>#product-list{
+    width: 76%;
+    border: 1px solid blue;
+    height: 100px;
+}
