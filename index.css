@@ -161,7 +161,8 @@ img {
 
 #footer-filter a {
     color: #eee;
-    text-decoration: none;
+    text-decoration:none;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #footer-top {
@@ -169,4 +170,8 @@ img {
     justify-content: space-between;
     padding-right: 25px;
     font-size: 13px;
+
 }
+
+    
+
