@@ -27,6 +27,7 @@
 .navbar-cont>img{
     width:190px;
     height: auto;
+    margin-left: 25px;
 }
 .country-select{
     margin-left:50px ;
@@ -161,6 +162,7 @@ border: 1px solid orangered;
     display:none;
     position: absolute;
     top: 65px;
+    margin-left: 10px;
 }
 .dropDown ul li{
     display: flex;
