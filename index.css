@@ -15,13 +15,6 @@
     height: 1000px;
 }
 
-#footer {
-    height: 100px;
-    width: 100%;
-    border: 1px solid black;
-    margin: 10px;
-}
-
 body {
     background-color: #f3f3f3 !important
 }
@@ -138,4 +131,42 @@ img {
     margin-top: 15px;
     height: 100%;
 
+}
+
+#footer {
+    margin-top: 30px;
+    border: 1px solid yellow;
+}
+
+#footer-option {
+    display: flex;
+    width: 515px;
+    margin: auto;
+    height: 40px;
+    text-align: center;
+    padding-bottom: 10px;
+    justify-content: space-between;
+    color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#footer-filter {
+    background-color: #232f3e;
+
+}
+
+#footer-filter ul {
+    list-style: none;
+}
+
+#footer-filter a {
+    color: #eee;
+    text-decoration: none;
+}
+
+#footer-top {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 25px;
+    font-size: 13px;
 }
