@@ -5,13 +5,72 @@
 #main>#menu-list{
     width: 23%;
     border: 1px solid red;
-    height: 100px;
+    /* height: 100px; */
 }
 #main>#product-list{
     width: 76%;
     border: 1px solid blue;
-    height: 100px;
+    /* height: 100px; */
 }
+
+
+                                               /*  LEFT NAVIGATION  */              
+.LeftNavFirstListImage{
+    width: 25px;
+    
+}
+#FirstleftNav a{
+    text-decoration: none;
+    color: grey;
+    line-height: 2;
+}
+#main-list a:hover{
+    color: red;
+}
+#menu-list{
+    background: rgb(245, 235, 235);
+}
+#menu-list ul li:hover {
+background: #dce0da;
+color: white;
+}
+
+.sub-menu-1{
+    display: none;
+}
+.sub-menu-2{
+    display: none;
+}
+.sub-menu-1 ul li:hover .sub-menu-2{
+    display: block;
+    background: white;
+    color: black;
+}
+#menu-list ul li:hover .sub-menu-1{
+    display: block;
+    background: rgb(158, 154, 154);
+    /* padding-left: -13px; */
+}
+/* #menu-list ul li:hover .sub-menu-1 ul li a:hover{
+    color: red;
+} */
+li {
+    list-style-type: none
+}
+/* .seconddiv{
+    display: flex;
+} */
+
+.firstdiv {
+    display: flex;
+}
+.seconddiv{
+    display: flex;
+}
+.sub-menu-2 ul li:hover{
+    color: red;
+}
+
 #footer{
     margin-top: 30px;
     border: 1px solid yellow;
