@@ -1,0 +1,62 @@
+#Fetch-Product {
+  display: flex;
+  margin: auto;
+  width: 85%;
+}
+
+#Product-Section {
+  display: grid;
+  width: 73%;
+  grid-template-columns: repeat(4, 1fr);
+  margin: auto;
+  gap: 10px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+#Product-Section > div > img {
+  width: 100%;
+  height: 50%;
+}
+
+#Product-Section > div {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 10px;
+}
+
+#sidebar {
+  width: 25%;
+  background-color: rgb(251, 251, 251);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+
+.sidebar-title {
+  text-decoration: none;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(233, 97, 30);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.area ul li {
+  list-style: none;
+}
+
+#reset {
+  padding-left: 10px;
+}
+#resetbtn {
+  color: white;
+  background-color: rgb(233, 97, 30);
+  padding: 8px;
+  border: none;
+  border-radius: 3px;
+}
+
+hr {
+  border: none;
+  border-top: 1px dashed rgb(205, 205, 205);
+  color: #fff;
+  background-color: #fff;
+  height: 1px;
+  width: 92%;
+}
