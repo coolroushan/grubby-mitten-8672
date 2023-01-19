@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="products.css" />
+  <body>
+
+
+
+  
+<div id="Fetch-Product"> 
+     
+ <!---------------------------------------------------------------Sidebar div---------------------------------------------------------------------->
+<div id="sidebar">
+
+  <div id="reset"><Button onclick="reset()" id="resetbtn">Reset Defaults</Button></div>
+
+ <!-------------------------------------------------------------Brand Category-------------------------------------------------------------------->
+<div class="sidebar-categories area">
+  <br>
+
+ 
+  <a href="#sidebar-categories" class="sidebar-title" >Brands</a>
+  <hr>
+
+ <div id="sidebar-categories" class="collapse show">
+     <ul class="sidebar-list">
+
+      <div><input id="1" type="checkbox" onclick="Agripro()" name="checkbox-filter-1" value="by AgriPro">AgriPro</input></div>
+                    
+      <div><input id="2" type="checkbox" onclick="Fulcrum()" name="checkbox-filter-2" value="by Fulcrum">Fulcrum</input></div>
+                    
+      <div><input id="3"  type="checkbox" onclick="POWERWASH()" name="checkbox-filter-3" value="by POWERWASH">PowerWash</input></div>
+
+      <div><input id="4"  type="checkbox" onclick="NILKAMAL()" name="checkbox-filter-3" value="by NILKAMAL">NilKamal</input></div>
+
+      <div><input id="5" type="checkbox" onclick="PowerHouse()" name="checkbox-filter-3" value="by PowerHouse">PowerHouse</input></div>
+
+      <div><input id="6" type="checkbox" onclick="Dubam()" name="checkbox-filter-3" value="by Dubam">Dubam</input></div>
+
+      <div><input id="7" type="checkbox" onclick="softspun()" name="checkbox-filter-3" value="by softspun">Softpun</input></div>
+
+      <div><input id="8" type="checkbox" onclick="Kirloskar()" name="checkbox-filter-3" value="by Kirloskar">Kirloskar</input></div>
+
+      <div><input id="9" type="checkbox" onclick="HikVision()" name="checkbox-filter-3" value="by HikVision">Hikvision</input></div>
+
+     </ul>
+  </div>
+</div>
+
+ <!----------------------------------------------------------Sort by Price Category----------------------------------------------------------------> 
+<div class="sidebar-sort area">
+
+<a href="#sidebar-sort" class="sidebar-title" data-bs-toggle="collapse">Sort by Price</a>
+<hr>
+
+  <div id="sidebar-sort" class="collapse show">
+    <ul class="sidebar-list">
+                 
+      <div onclick="handlesort1()">Highest to Lowest</div>
+      <br>
+      <div onclick="handlesort2()">Lowest to Highest</div>
+              
+    </ul>
+ </div>
+</div>
+
+
+<!-----------------------------------------------------------Filter by Price Category--------------------------------------------------------------> 
+<div class="sidebar-filter area">
+
+<a href="#sidebar-filter" class="sidebar-title" data-bs-toggle="collapse">Filter by Price</a>
+<hr>
+
+  <div id="sidebar-filter" class="collapse show">
+
+   <ul class="sidebar-list">
+
+    <div>
+           Enter Price Range
+    </div>
+
+     <br>
+
+    <div>
+          <input type="number" id="lower" placeholder="LowerPrice"/>
+    </div>
+
+     <br>
+
+    <div>
+          <input type="number" id="upper"  placeholder="HigherPrice" />
+    </div>
+     
+     <br>
+
+    <div>
+          <button onclick="handlefilter()" id="resetbtn">Show Products</button>
+    </div>
+
+    </ul>
+  </div>
+</div>
+
+</div>
+<!-------------------------------------------------------------Product Section Div----------------------------------------------------------------->
+  <div id="Product-Section">
+    <!-- Append the Products Here -->
+  </div>
+
+</div>
+
+  </body>
+</html>
+<script src="products.js">
+  // <!-- Here Append All the Products Cards here-->
+</script>
