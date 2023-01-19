@@ -1,3 +1,53 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #f3f3f3;
+}
+#privacy{
+    width: 75%;
+    margin: auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding:6px 10px;
+    color: #444;
+    border-radius: 3px;
+    background-color: #eee;
+}
+#privacy>h3{
+    font-size: 26px;
+    margin-bottom: 12px;
+    font-weight: lighter;
+}
+#privacy>p,ul,li,span{
+    font-size: 13px;
+    line-height: 19px;
+    font-weight: lighter;
+}
+#privacy>h4{
+    font-size: 20px;
+    font-weight: lighter;
+    margin-top: 25px;
+}
+#privacy>a{
+    text-decoration: none;
+    color: royalblue;
+}
+/* scroll-top */
+#scroll-top a{
+    text-decoration: none;
+}
+.gotopbtn{
+    position:fixed;
+    text-align: center;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    background-color: #ff0000;
+    bottom: 40px;
+    right: 50px;
+    color: #eee;
+}
 
 /* footer-section */
 #footer{
@@ -89,14 +139,7 @@
     height: 40px;
     
 }
-#footer-text{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 90%;
-    margin: auto; 
-}
-#footer-text>p{
-    font-size: 10px;
-}
+
 #payment-logo span{
     font-size: 18px;
     
@@ -122,19 +165,4 @@
 #copyright a{
     text-decoration: none;
     color: rgb(32, 101, 191);
-}
-/* scroll-top */
-#scroll-top a{
-    text-decoration: none;
-}
-.gotopbtn{
-    position:fixed;
-    text-align: center;
-    line-height: 40px;
-    width: 40px;
-    height: 40px;
-    background-color: #ff0000;
-    bottom: 40px;
-    right: 50px;
-    color: #eee;
 }
