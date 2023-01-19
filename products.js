@@ -91,8 +91,10 @@ function displayProduct(out) {
   });
 }
 
+
 // -------------------------------------------------------------------------------------------------------------------------
 // Sorting the products by lower to higher price
+
 
 function handlesort1() {
   bag.sort((a, b) => b.price - a.price);
@@ -106,6 +108,7 @@ function handlesort2() {
   bag.sort((a, b) => a.price - b.price);
   displayProduct(bag);
 }
+
 
 // ------------------------------------------------------------------------------------------------------------------------------
 
@@ -123,7 +126,26 @@ function handlefilter() {
   displayProduct(filterdata);
 }
 
+
 // ------------------------------------------------------------------------------------------------------------------------------
+
+
+// To Search the Products
+
+function search(){
+  let q=document.querySelector("#Search").value
+ 
+ let newData=bag.filter(function(elem){
+     return elem.name.toLocaleLowerCase().includes(q.toLocaleLowerCase());
+ });
+ 
+ displayProduct(newData)
+ }
+ 
+ 
+// ------------------------------------------------------------------------------------------------------------------------------
+
+
 
 // Filter the products by brands
 

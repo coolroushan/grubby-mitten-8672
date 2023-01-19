@@ -1,4 +1,4 @@
- fw21_0706_Day3
+ 
 
 /* navbar */
 *{
@@ -221,10 +221,8 @@ border: 1px solid orangered;
 /* navbar */
 
 
-#main{
 
-#main {
- main
+ #main{
     display: flex;
     justify-content: space-between;
 }
