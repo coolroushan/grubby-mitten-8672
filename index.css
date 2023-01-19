@@ -1,21 +1,10 @@
-#main{
-    display: flex;
-    justify-content: space-between;
-}
-#main>#menu-list{
-    width: 23%;
-    border: 1px solid red;
-    height: 100px;
-}
-#main>#product-list{
-    width: 76%;
-    border: 1px solid blue;
-    height: 100px;
-}
+
+/* footer-section */
 #footer{
     margin-top: 30px;
     border: 1px solid yellow;
 }
+/* footer-top-section */
 #footer-option{
     display: flex;
     width: 515px;
@@ -28,21 +17,76 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 #footer-filter{
-    background-color: #232f3e;
+    background-color: #223143;
     
 }
 #footer-filter ul{
     list-style: none; 
 }
 #footer-filter a{
-    color: #eee;
+    color: rgb(219, 217, 217);
     text-decoration:none;
     font-family: Arial, Helvetica, sans-serif;
+}
+#footer-filter a:hover{
+    text-decoration: underline;
 }
 #footer-top{
     display: flex;
     justify-content: space-between;
-    padding-right: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 65px;
+    padding-left: 22px;
     font-size: 13px;
+    line-height: 23px;
     
+}
+/* footer-mid-section */
+#footer-mid{
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 65px;
+    padding-left: 22px;
+    font-size: 13px;
+    line-height: 23px;
+    background-color: #161d25;
+    border-bottom: 1px solid white;
+}
+#footer-mid ul{
+    list-style: none;
+    font-size: 13px;
+}
+#footer-mid a{
+    color: rgb(219, 217, 217);
+    text-decoration:none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#footer-mid a:hover{
+    text-decoration: underline;
+}
+#footer-mid p{
+    color: rgb(219, 217, 217);
+    font-size: 17px;
+}
+#newsletter{
+    width: 250px;
+}
+.connect i{
+    padding:0px 3px;
+    
+}
+#help{
+    width: 295px;
+    margin-bottom: 10px;
+}
+#payment-logo{
+    font-size: 33px;
+    height: 30px;
+    padding-left: 100px;
+}
+.footer-text{
+    font-size: 11px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 50px;
 }
