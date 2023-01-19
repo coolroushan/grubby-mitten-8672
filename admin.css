@@ -60,9 +60,19 @@ nav>div>input{
     /* border-wi    dth: 0ch; */
 }
 
-#count{
+#count  {
     font-size: 45px;
     font-weight: 600;
+}
+
+#Visitors{
+    font-size: 45px;
+    font-weight: 600;
+}
+
+#Product{
+    font-size: 45px;
+    font-weight: 600; 
 }
 
 #count_div{
@@ -103,4 +113,9 @@ nav>div>input{
 
 #logodiv{
     padding-bottom: 0px;
+}
+
+/*                                                 TABLE */
+table{
+    border: 1px solid black;
 }

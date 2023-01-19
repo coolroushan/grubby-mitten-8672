@@ -1,0 +1,39 @@
+#update{
+    height: 100%;
+  width: 160px;
+ position: fixed; 
+  z-index: 1;
+  top: 0;
+  left: 0;
+  padding-top: 16px;
+  text-align: center;
+}
+
+#update input {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  /* color: #818181; */
+  color: #fceeee;
+  display: block;
+} 
+
+
+
+#products{
+  /* padding-left: 300px; */
+  padding: 50px 150px;
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-areas: 100px;
+  padding-left: 550px;
+}
+
+#companydiv{
+  padding: 50px 150px;
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-areas: 100px;
+}
