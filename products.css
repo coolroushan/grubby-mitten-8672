@@ -2,6 +2,7 @@
   display: flex;
   margin: auto;
   width: 85%;
+  margin-top: 20px;
 }
 
 #Product-Section {
@@ -59,4 +60,15 @@ hr {
   background-color: #fff;
   height: 1px;
   width: 92%;
+}
+
+#searchbar{
+  display: flex;
+ justify-content: center;
+ 
+}
+
+#Search{
+  width: 500px;
+  height: 25px;
 }
