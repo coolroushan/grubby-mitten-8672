@@ -23,7 +23,7 @@
             <a href="admin.html"> Home</a>
             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             <a  id="sidenav"  class="fa fa-fw fa-wrench"></a>
-            <a href="#services">Services</a>
+            <a href="update.html">Add/Update</a>
             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             <a  id="sidenav"  class="fa fa-fw fa-user"></a>
             <a href="client.html"><i></i> Clients</a>
@@ -32,15 +32,9 @@
             <a href="adminProduct.html"><i></i> Products</a>
         </div>
         <div id="main">
-            <nav>
-                <h1>
-                    Hardware City
-                </h1>
-                <div>
-                <input id="navdiv" type="text" placeholder="Search...                         🔍">
-                <button id="navdiv">Search</button>
-                </div>  
-                <div>    </div>
+            <nav> 
+                <div> <h1> Hardware City </h1> </div> 
+                <div><h3 id="username"></h3></div>    
             </nav>
             <hr>    
             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -48,7 +42,7 @@
                 <div id="users">
                     <div id="count_div">
                         <div>
-                            <p style="display: inline;" id="count">83</p>
+                            <p style="display: inline;" id="count"></p>
                             <h3>Registered User</h3>
                         </div>
                         <div id="logodiv">
@@ -59,7 +53,7 @@
                 <div id="visitors">
                     <div id="count_div">
                         <div>
-                            <p style="display: inline;" id="count">135</p>
+                            <p style="display: inline;" id="Visitors"></p>
                             <h3>Daily Visitors</h3>
                         </div>
                         <div id="logodiv">
@@ -70,7 +64,7 @@
                 <div id="messages">
                     <div id="count_div">
                         <div>
-                            <p style="display: inline;" id="count">83</p>
+                            <p style="display: inline;" id="Product"></p>
                             <h3>Total Products</h3>
                         </div>
                         <div id="logodiv">
@@ -80,11 +74,10 @@
                 </div>
             </div>
             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <div id="stat">
                 <div>
                     <h3>Recent Orders</h3>
-                    <table>
-                        <thead>
+                    <table style="width: 100%;">
+                        <thead >
                             <tr>
                                 <th>#</th>
                                 <th>Category</th>
@@ -94,11 +87,21 @@
                                 <th>Order status</th>       
                             </tr>
                         </thead>
+                        <tbody>
+                            <tr>
+                                <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+                            </tr>
+                        </tbody>
                     </table>
                 </div>
-                <div></div>
-            </div>
+                
         </div>
     </div>
 </body>
+<script src="admin.js"></script>
 </html>

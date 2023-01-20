@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- <link rel="stylesheet" href="normalize.css" /> -->
+    <link rel="stylesheet" href="skeleton.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="update.css">
+    <title>Hardware City</title>
+  </head>
+  <body>
+    <div style="display: flex;">
+        <div class="sidebar" style="padding-top:250px">
+            <a id="sidenav" class="fa fa-fw fa-home"></a>
+            <a href="admin.html"> Home</a>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <a  id="sidenav"  class="fa fa-fw fa-wrench"></a>
+            <a href="update.html">Add/Update</a>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <a  id="sidenav"  class="fa fa-fw fa-user"></a>
+            <a href="client.html"><i></i> Clients</a>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <a  id="sidenav"   class="fa fa-fw fa-envelope"></a>
+            <a href="adminProduct.html"><i></i> Products</a>
+        </div>
+        
+        <div id="update" style="padding: 200px; width: 300px; gap: 20px;">
+          <div>
+            <h4>Add Products</h4>
+            <input type="text" id="employee-name" class="u-full-width" placeholder="Name" />
+            <input type="text" id="employee-image" class="u-full-width" placeholder="Image Url" />
+            <input type="number" id="employee-dept" class="u-full-width" placeholder="Description" />
+            <input type="number" id="employee-salary" class="u-full-width" placeholder="Price" />
+            <button id="add-employee" class="u-full-width button button-primary"> Add Product </button>
+          </div>
+          <div>
+            <h4>Update Product</h4>
+            <input type="text" id="update-employee-id" class="u-full-width" placeholder="ID" />
+            <input type="text" id="update-employee-name" class="u-full-width" placeholder="Name" />
+            <input type="text" id="update-employee-image" class="u-full-width" placeholder="Image Url" /> 
+            <input type="number" id="update-employee-dept" class="u-full-width" placeholder="Description"  />
+            <input type="number" id="update-employee-salary" class="u-full-width" placeholder="Price" /> 
+            <button id="update-employee" class="u-full-width button button-primary" > Update Product </button>
+            <hr />
+          </div>
+        </div>
+        <div id="products">
+
+        </div>
+
+    </div>
+
+
+    <script src="update.js"></script>
+  </body>
+</html>
