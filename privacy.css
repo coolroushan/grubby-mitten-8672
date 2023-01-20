@@ -1,5 +1,5 @@
 html{
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
 }
 body{
     background-color: #f3f3f3;
@@ -9,7 +9,7 @@ body{
     margin: auto;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding:6px 10px;
+    padding: 10px 10px;
     color: #444;
     border-radius: 3px;
     background-color: #eee;
@@ -43,9 +43,9 @@ body{
     line-height: 40px;
     width: 40px;
     height: 40px;
-    background-color: #ff0000;
-    bottom: 40px;
-    right: 50px;
+    background: rgba(0,0,0,0.4);
+    bottom: 30px;
+    right: 10px;
     color: #eee;
 }
 
