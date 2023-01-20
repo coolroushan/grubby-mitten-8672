@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <style>
+    </style>
+  </head>
+  <body>
+    <div>
+      <button>Sign Up</button>
+      <button>Sign In</button>
+    </div>
+    <form id="signUp">
+      <h1>REGISTER!</h1>
+      <input type="text" id="name" placeholder="Name" required />
+      <br />
+      <input type="email" id="email" placeholder="E-mail" required />
+      <br />
+      <input type="password" id="password" placeholder="Password" required />
+      <br />
+      <input
+        type="password"
+        id="passwordChk"
+        placeholder="Re-enter Password"
+        required
+      />
+      <br />
+      <input type="submit" />
+    </form>
+
+    <form id="signIn">
+      <h1>LOGIN!</h1>
+      <input type="email" id="email1" placeholder="E-mail" required />
+      <br />
+      <input type="password" id="password1" placeholder="Password" required />
+      <br />
+
+      <input type="submit" />
+    </form>
+  </body>
+</html>
+<script>
+  let logInBtn = document.querySelector("div>button:nth-child(2)");
+  let signUpBtn = document.querySelector("div>button:nth-child(1)");
+  let signIn = document.querySelector("#signIn");
+  let signUp = document.querySelector("#signUp");
+  signIn.style.display = "none";
+  logInBtn.addEventListener("click", function () {
+    //console.log("login");
+    signUp.style.display = "none";
+    signIn.style.display = "block";
+  });
+  signUpBtn.addEventListener("click", function () {
+    //console.log("signup");
+    signUp.style.display = "block";
+    signIn.style.display = "none";
+  });
+  let arr = JSON.parse(localStorage.getItem("user")) || [];
+  signUp.addEventListener("submit", function (event) {
+    event.preventDefault();
+    let obj = {
+      name: signUp.name.value,
+      email: signUp.email.value,
+      password: signUp.password.value,
+      check_password: signUp.passwordChk.value,
+    };
+    arr.push(obj);
+    if (obj.password != obj.check_password) {
+      alert("password not match");
+    } else {
+      localStorage.setItem("user", JSON.stringify(arr));
+      alert("Sign up successfully");
+      signUp.reset();
+    }
+  });
+
+  signIn.addEventListener("submit", function (event) {
+    event.preventDefault();
+    let obj1 = {
+      email: signIn.email1.value,
+      password: signIn.password1.value,
+    };
+    // let storeData=localStorage.parse
+    arr.forEach((el) => {
+      users = el.email;
+      userPsw = el.password;
+    });
+    if (users != obj1.user && userPsw != obj1.password) {
+      alert("Invalid");
+    } else {
+      alert("Log in successfully");
+      window.location.assign("./index.html");
+    }
+  });
+</script>
