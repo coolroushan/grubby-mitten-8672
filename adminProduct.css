@@ -1,0 +1,113 @@
+body {
+    font-family: "Lato", sans-serif;
+    line-height: 1px;
+}
+
+.sidebar {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 16px;
+  text-align: center;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  /* color: #818181; */
+  color: #fceeee;
+  display: block;
+}
+
+#sidenav{
+    padding-left: 70px;
+}
+
+#main{
+  padding-left: 180px;
+}
+
+#companydiv{
+  padding: 50px 150px;
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-areas: 100px;
+}
+
+#companydiv>button{
+  height: 150px;
+  border-radius: 20px;
+  border-color: grey;
+}
+
+#agripro{
+  color: red;
+  font-weight: 700;
+  font-size: 50px;
+}
+#fulcrum{
+  font-size: 39px;
+  font-family: cursive;
+}
+
+#powerwash{
+  font-size: 33px;
+  font-weight: 600;
+  color: blue;
+}
+
+#powerhouse{
+  font-size: 33px;
+  font-family: serif
+}
+
+#nilkamal{
+  font-size: 40px;
+  font-weight: 700;
+  font-family: sans-serif;
+  color: rgb(128, 128, 247);
+}
+
+#dubam{
+  font-size: 33px;
+  font-family: serif  
+}
+
+#softspan{
+  font-size: 40px;
+  font-weight: 700;
+  font-family: sans-serif;
+  color: rgb(79, 79, 121);
+}
+
+#kirloskar{
+  font-size: 33px;
+  font-family: sans-serif;
+  font-weight: 700;
+}  
+
+#hikvision{
+  font-size: 37px;
+  font-weight: 700;
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#box>img{
+  width: 100%;
+  height: 50%;
+}
+
+
+
+
+
+/*                                                          update section */
+
