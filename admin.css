@@ -1,0 +1,106 @@
+body {
+    font-family: "Lato", sans-serif;
+    line-height: 1px;
+}
+
+.sidebar {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 16px;
+  text-align: center;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  /* color: #818181; */
+  color: #fceeee;
+  display: block;
+}
+
+/* .sidebar a:hover {
+  color: #f1f1f1;
+} */
+#sidenav{
+    padding-left: 70px;
+}
+#Body{
+    display: flex;
+}
+#main{
+    padding-left: 175px;
+    width: 100%;
+}
+
+h1{
+    font-size: 50px;
+    color: rgb(231, 111, 12);
+}
+
+nav {
+    display: flex;
+}
+
+nav div{
+    padding: 30px;
+}
+
+#navdiv{
+    height: 32px;
+}
+nav>div>input{
+    border-color: rgb(190, 188, 188);
+    /* border-wi    dth: 0ch; */
+}
+
+#count{
+    font-size: 45px;
+    font-weight: 600;
+}
+
+#count_div{
+    display: flex;
+    margin-top: 30px;
+}
+
+#count_div div:nth-child(1){
+    padding-top: 20px;
+}
+
+#logo{
+    font-size: 60px;
+}
+
+#data{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#users{
+    background-color: rgb(109, 199, 109);
+    padding: 20px 50px;
+    justify-content: space-evenly;
+}
+
+#visitors{
+    background-color: orange;
+    padding: 20px 50px;
+    justify-content: space-evenly;   
+}
+
+#messages{
+    background-color: lightblue;
+    padding: 20px 50px;
+    justify-content: space-evenly;
+}
+
+#logodiv{
+    padding-bottom: 0px;
+}

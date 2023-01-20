@@ -6,13 +6,311 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <title>Hardware City</title>
 </head>
 
 <body>
-    <nav></nav>
+    <nav>
+         <!-- navbar -->
+    <p id="front">For any query, email us at care@hardwarecity.com or call us on +91 8448449073</p>
+    <!-- ===========Navbar============= -->
+    <div class="head">
+        <div class="navbar-cont">
+         <img  src="HARDWARE CITYY.png" alt="">
+           <div class="search-box">
+            <div class="country-select" id="location">
+                <div class="select">
+                    <p id="text">
+                        All Categories 
+                    </p>
+                    <i class="fa-solid fa-angle-down" id="arrow"></i>
+    
+                </div>
+                <ul class="option" id="list">
+                    <li class="option1" onclick="myFunction('Abrasives')">
+                        <p>Abrasives</p>
+                    </li>
+                    <li class="option1" onclick="myFunction('Adhesives sealants and tape')">
+                      
+                        <p>Adhesives sealants and tape</p>
+                    </li>
+                    <li class="option1" onclick="myFunction('Agriculture Garden & Landscaping')">
+                       
+                        <p>Agriculture Garden & Landscaping</p>
+                    </li>
+                    <li class="option1" onclick="myFunction('Appliances')">
+                       
+                        <p>Appliances</p>
+                    </li>
+                    <li class="option1" onclick="myFunction('Bearings')">
+                        
+                        <p>Bearings</p>
+                    </li>
+                    <li class="option1" onclick="myFunction('Cleaning')">
+                       
+                        <p>Cleaning</p>
+                    </li>
+                    <li class="option1" onclick="myFunction('Corporate Gifts')">
+                       
+                        <p>Corporate Gifts</p>
+                    </li>
+                    <li class="option1" onclick="myFunction('Electrical')">
+                       
+                        <p>Electrical</p>
+                    </li>
+                    <li class="option1" onclick="myFunction('Electronics & Robotics')">
+                       
+                        <p>Electronics & Robotics</p>
+                    </li>
+    
+                </ul>
+               </div>
+            <input type="text" class="search" placeholder="Search Products by title,supplier,sku,categorie,etc.... " id="searchid">
+            <p><i class="fa-solid fa-magnifying-glass" id="search_icon"></i></p>
+           </div>
+
+           <div class="logo">
+            <div class="image" id="imgId">
+                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+
+            </div>
+            
+            <div class="dropDown" id="dropDownid">
+                <div class="Profile">
+                   <div> <img width="65px" src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt=""></div>
+                    <div style="margin-left:15px">
+                        <p style="margin-bottom:5px">Hello,</p>
+                    <h4 style="margin-bottom:5px">CHUNKY SHARMA</h4>
+                    <p style="margin-bottom:5px"><u> View and edit profile</u></p>
+                    </div>
+                </div>
+                <hr>
+                <ul>
+                    <li>
+                        <p>Sign In</p>
+                    </li>
+                    <li>
+                        <p>Pay Latter</p>
+                    </li>
+                    
+                <li>
+                    
+                    <p>Quotation</p>
+                </li>
+                <li>
+                    <hr>
+            
+                    <p>Purchase List</p>
+                </li>
+                <li>
+                    
+                    <p>Quick Order</p>
+                </li>
+                <hr>
+                <li>
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <p>Log Out</p>
+                </li>
+                <hr>
+                </ul>
+            </div>
+           </div>
+           <div style="display:flex;color:white;" class="msg">
+           <div style="margin-left: 5px;">
+            <p ><i class="fa-solid fa-location-dot"></i></p>
+           </div>
+            <div style="margin-left:5px">
+                <p style="font-size: small;">Track</p>
+            <p style="font-size: small;"><b>Order</b></p>
+            </div>
+           </div>
+           <div style="display:flex;color:white;margin-left:10px" class="msg">
+            <p><i class="fa-solid fa-cart-plus"></i></p>
+            <p style="font-size:small;margin-left:5px"><b>CART</b></p>
+           </div>
+           <div style="margin-left:25px" class="app">
+               <img src="https://www.industrybuying.com/static/images/android-paly.png" alt=""> 
+        <img style="margin-left:5px" src="https://www.industrybuying.com/static/images/ios-play.png" alt="">
+        <p style="color:white">Download the APP!</p>
+            <!-- <h4 style="cursor: pointer;"><a href="/clonePro/silky-dolls-6712/login.html"></a>Login</h4> -->
+           
+        </div>
+
+
+
+        </div>
+    </div>
+    </nav>
     <!-- main section -->
     <div id="main">
+        <div id="menu-list">
+
+            <!-- <div class="leftNavContainer navigation" style="top: 69px; position:fixed;">
+            <section id="NavigationView"> -->
+                <ul id="FirstleftNav">
+                    <li style="list-style-type: none;" class="LeftNavFirstList" class="dropbtn">
+                        <div class="firstdiv">
+
+                            <div class="hover_me">
+                            <a href="">
+                            <img class="LeftNavFirstListImage" src="https://th.bing.com/th/id/OIP.yxAj4dkMIZ8dk51u-ZZH9wHaHa?w=170&h=180&c=7&r=0&o=5&pid=1.7" alt="">
+                            &nbsp Agriculture Garden & Landscaping
+                            </a>
+                            </div>
+
+                            <div class="sub-menu-1">
+                            <ul>
+                                 <li>
+                                    <div class="seconddiv">
+                                    <div>
+                                        <a href="">Grain Processing Machine</a>
+                                    </div>
+                                    <div class="sub-menu-2">
+                                        <ul>
+                                            <li style="color: red;font-size: 17px;">Shop by Brand</li>
+                                            <li>
+                                                <a href="">Agripro</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Confider</a>
+                                            </li>
+                                            <li>
+                                                <a href="">RAJA</a>
+                                            </li>
+                                            <li>
+                                                <a href=""> Rico Italy</a>
+                                            </li>
+                                            <li>
+                                                <a href=""> KISANKRAFT</a>
+                                            </li>
+                                            <li>
+                                                <a href=""> Sparrow</a>
+                                            </li>
+                                            <li>
+                                                <a href=""> agrOMill</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    </div>
+                                </li> 
+                                <li><a href="">Tillers and Cultivator</a></li>
+                                <li><a href="">Brush Cutter and Accessories</a></li>
+                                <li><a href=""> Chaff Cutters </a></li>
+                                <li><a href=""> Sprayers </a></li>
+                                <li><a href=""> Chain Saw </a></li>
+                                <li><a href=""> Water Pump Sets</a></li>
+                                <li><a href="">  Lawn Movers </a></li>
+                                <li><a href="">  Earth Auger  </a></li>
+                                <li><a href=""> Seed Planter   </a></li>
+                                <li><a href="">  Garden Hand Tools  </a></li>
+                                <li><a href="">   Fertilizer and Pest Control </a></li>
+                                <li><a href="">  See All >>  </a></li>
+                            </ul>
+                            </div>
+
+                        </div>
+                    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <li style="list-style-type: none;" class="LeftNavFirstList" class="dropbtn">
+                        <a href="">
+                            <img class="LeftNavFirstListImage" src="https://t3.ftcdn.net/jpg/00/95/23/44/240_F_95234465_OMLu2P2Gw5zhorxwJLtMNaSWYzjRYUlm.jpg" alt="">
+                            &nbsp Power Tools
+                        </a>
+                    </li>
+                    <li style="list-style-type: none;" class="LeftNavFirstList" class="dropbtn">
+                        <a href="">
+                            <img style="width: 15px;" class="LeftNavFirstListImage" src="https://th.bing.com/th/id/OIP.7SObYxU3UFFcJ8aGOEmzGgHaJ-?w=129&h=180&c=7&r=0&o=5&pid=1.7" alt="">
+                            &nbsp&nbsp&nbsp Office Supplies
+                        </a>
+                    </li>
+                    <li style="list-style-type: none;" class="LeftNavFirstList" class="dropbtn">
+                        <a href="">
+                            <img class="LeftNavFirstListImage" src="https://th.bing.com/th/id/OIP.k1p6JyN8Tr1Yya7R6T0YPQHaHl?w=176&h=180&c=7&r=0&o=5&pid=1.7" alt="">
+                           &nbsp Material Handling & Packaging
+                        </a>
+                    </li>
+                    <li style="list-style-type: none;" class="LeftNavFirstList" class="dropbtn">
+                        <a href="">
+                            <img class="LeftNavFirstListImage" src="https://th.bing.com/th/id/OIP.HDweZv5BJg6IBYKuSjGQlAHaH0?w=192&h=202&c=7&r=0&o=5&pid=1.7" alt="">
+                            &nbsp Pumps
+                        </a>
+                    </li>
+                    <li style="list-style-type: none;" class="LeftNavFirstList" class="dropbtn">
+                        <a href="">
+                            <img class="LeftNavFirstListImage" src="https://th.bing.com/th/id/OIP.0bDV_ObURarQtJrDVQVSjwAAAA?w=185&h=185&c=7&r=0&o=5&pid=1.7" alt="">
+                            &nbsp Automotive Maintenance & Accessories
+                        </a>
+                    </li>
+                    <li style="list-style-type: none;" class="LeftNavFirstList" class="dropbtn">
+                        <a href="">
+                            <img class="LeftNavFirstListImage" src="https://th.bing.com/th/id/OIP.8VErV1bCWqHbmo3SYnZC-QHaHa?w=207&h=208&c=7&r=0&o=5&pid=1.7" alt="">
+                          &nbsp Safety
+                        </a>
+                    </li>
+                    <li style="list-style-type: none;" class="LeftNavFirstList" class="dropbtn">
+                        <a href="">
+                            <img class="LeftNavFirstListImage" src="https://th.bing.com/th/id/OIP.EZAXVemT5hRylYAhfV3HVgHaHZ?w=210&h=209&c=7&r=0&o=5&pid=1.7" alt="">
+                            &nbsp Cleaning
+                        </a>
+                    </li>
+                    <li style="list-style-type: none;" class="LeftNavFirstList" class="dropbtn">
+                        <a href="">
+                            <img class="LeftNavFirstListImage" src="https://th.bing.com/th/id/OIP.nQctKoDhrbL47SQjgZzC-QHaHQ?w=180&h=180&c=7&r=0&o=5&pid=1.7" alt="">
+                            &nbsp  Electrical
+                        </a>
+                    </li>
+                    <li style="list-style-type: none;" class="LeftNavFirstList" class="dropbtn">
+                        <a href="">
+                            <img class="LeftNavFirstListImage" src="https://th.bing.com/th/id/OIP.5lgePgAm37JM1W5fKGLhvwHaHa?w=195&h=196&c=7&r=0&o=5&pid=1.7" alt="">
+                            &nbsp Testing and Measuring instruments
+                        </a>
+                    </li>
+                    <li style="list-style-type: none;" class="LeftNavFirstList" class="dropbtn">
+                        <a href="">
+                            <img class="LeftNavFirstListImage" src="https://th.bing.com/th/id/OIP.r_UUizzlma_0-Bs3c6YJowHaHa?w=196&h=195&c=7&r=0&o=5&pid=1.7" alt="">
+                            &nbsp  IT & Electronics
+                        </a>
+                    </li>
+                    <li style="list-style-type: none;" class="LeftNavFirstList" class="dropbtn">
+                        <a href="">
+                            <img class="LeftNavFirstListImage" src="https://th.bing.com/th/id/OIP.FMvkIaBD7ynRPmQljbmngAAAAA?w=199&h=190&c=7&r=0&o=5&pid=1.7" alt="">
+                            &nbsp  Furniture, Hospitality and Food Service
+                        </a>
+                    </li>
+                    <li style="list-style-type: none;" class="LeftNavFirstList" class="dropbtn">
+                        <a href="">
+                            &nbsp See All Categories
+                        </a>
+                    </li>
+                </ul>
+            <!-- </section>
+            </div> -->
+        </div>
+
+
+
+
+
+
+            
+        </div>
+        <div id="product-list"></div>
+
         <div id="menu-list"></div>
 
         <div id="product-list">
@@ -669,6 +967,7 @@
     </div>
 
     <!-- footer -->
+    
     <footer id="footer">
         <div id="footer-filter">
             <div id="footer-option">
@@ -681,6 +980,7 @@
                 <div>
                     <h4>Popular Searches</h4>
                 </div>
+
             </div>
             <div id="footer-top">
                 <div class="top-list">
@@ -743,23 +1043,12 @@
         <div></div>
     </footer>
 </body>
+ fw21_0706_Day3
+<script src="index.js">
+</script>
+</html>
+
 
 </html>
-<script>
-    let slider = document.querySelector("#slider");
-    let images = ['imags/37H2C1AreeND.jpg',
-        'imags/1671432246CP-PLUS-DESKTOP-(524X334).png',
-        'imags/ODHmL0j6nled.jpg',
-        'imags/pVGjggR2HJcR.png',
-        'imags/uvH4Mcg1e2sG.png'];
-    let i = 0;
-    setInterval(() => {
-        slider.src = images[i];
-        if (i >= 4) {
-            i = 0;
-        } else {
-            i++;
-        }
-    }, 3000);
 
-</script>
+
