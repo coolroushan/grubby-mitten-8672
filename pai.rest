@@ -1,30 +1,18 @@
+GET https://63c55501f3a73b347853986b.mockapi.io/users?page=1&limit=10
+
+###
+
 GET https://63c55501f3a73b347853986b.mockapi.io/users
 
 
+###
 
-console.log(false)
-    companydiv.innerHTML = null
-    data.forEach(element => {
-        let box = document.createElement('div');
-        box.setAttribute('id',"box")
+POST https://63c55501f3a73b347853986b.mockapi.io/users
+Content-Type: application/json
 
-        let img = document.createElement('img');
-        img.setAttribute('src',element.image);
-
-        let description = document.createElement('p');
-        description.innerText = element.description;
-        
-        let price = document.createElement('p');
-        price.setAttribute('id','price')
-        price.textContent = 'INR'+"-" + element.price +'--'+ 'INR - 22,234';
-
-        let a  = document.createElement('a');
-        a.setAttribute('href','./product.html')
-
-        a.append(img)
-        box.append(a,description,price)
-        companydiv.append(box);
-        box.addEventListener('click',()=>{
-            console.log(element.price)
-        })
-    });
+  {
+    "name": "camera",
+    "image": "/images/avatar/avatar1.jpeg",
+    "description": "by Fulcrum",
+    "price": 30000
+  }
