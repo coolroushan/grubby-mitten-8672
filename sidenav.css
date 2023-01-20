@@ -1,0 +1,87 @@
+  /*  LEFT NAVIGATION  */
+  .LeftNavFirstListImage {
+      width: 25px;
+  }
+
+  #FirstleftNav a {
+      text-decoration: none;
+      color: grey;
+      line-height: 2;
+  }
+
+  #main-list a:hover {
+      color: red;
+  }
+
+  #menu-list {
+      /* background: rgb(245, 235, 235); */
+  }
+
+  #menu-list ul li:hover {
+      background: rgb(82, 93, 98);
+      /* color: white; */
+  }
+
+  #menu-list ul li:hover a {
+      color: white;
+  }
+
+  ​ .sub-menu-1 {
+      /* display: none; */
+      display: none;
+      margin-left: 300px;
+      /* padding-left: 2px; */
+  }
+
+  .sub-menu-2 {
+      display: none;
+      margin-left: 190px;
+      color: black;
+      padding-right: 24px;
+  }
+
+  ​ .sub-menu-2 ul li a {
+      color: black;
+  }
+
+  ​ .sub-menu-1 ul li:hover .sub-menu-2 {
+      display: block;
+      /* background: white; */
+      color: black;
+      position: absolute;
+      width: 150px;
+  }
+
+  #menu-list ul li:hover .sub-menu-1 {
+      display: block;
+      background: rgb(82, 93, 98);
+      position: absolute;
+      color: white;
+      width: 230px;
+      /* padding-left: -13px; */
+  }
+
+  ​ #menu-list ul li:hover .sub-menu-1 ul li a {
+      color: white;
+  }
+
+  ​ #menu-list ul li:hover .sub-menu-1 ul li a:hover {
+      color: rgb(61, 58, 58);
+  }
+
+  ​ li {
+      list-style-type: none;
+  }
+
+  ​ .firstdiv {
+      display: flex;
+  }
+
+  .seconddiv {
+      display: flex;
+      position: relative;
+  }
+
+  .sub-menu-2 ul li:hover {
+      color: red;
+  }
