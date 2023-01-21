@@ -33,17 +33,22 @@ function displayProduct(out) {
     productName.style.fontFamily = "Arial, Helvetica, sans-serif";
     productName.style.fontSize = "15px";
     productName.style.color = "rgb(66,66,66)";
+    productName.style.marginTop="10px"
+    
 
     let productdes = document.createElement("p");
     productdes.innerText = elem.description;
     productdes.style.fontFamily = "Arial, Helvetica, sans-serif";
     productdes.style.fontSize = "12px";
+    productdes.style.marginTop="10px"
 
     let productprice = document.createElement("h3");
     productprice.innerText = `Rs. ${elem.price}`;
     productprice.style.fontFamily = "Arial, Helvetica, sans-serif";
     productprice.style.fontSize = "15px";
     productprice.style.color = "rgb(233,97,30)";
+    productprice.style.marginTop="10px"
+    productprice.style.marginBottom="10px"
 
     let btn = document.createElement("button");
     btn.textContent = "ADD TO CART";
@@ -133,7 +138,7 @@ function handlefilter() {
 // To Search the Products
 
 function search(){
-  let q=document.querySelector("#Search").value
+  let q=document.querySelector("#searchid").value
  
  let newData=bag.filter(function(elem){
      return elem.name.toLocaleLowerCase().includes(q.toLocaleLowerCase());
@@ -282,3 +287,32 @@ function HikVision() {
 function reset() {
   displayProduct(bag);
 }
+
+
+
+// -----------------------------------------------------------------------------------------------------------------------
+
+// navbar functionality
+
+
+console.log("hello")
+let locate=document.getElementById("location")
+let arrow=document.getElementById("arrow")
+let list=document.getElementById("list")
+let text=document.getElementById("text");
+locate.addEventListener("click",function (){
+    list.classList.toggle("showing")
+    arrow.classList.toggle("rotate")
+})
+function myFunction(output){
+    text.innerHTML=output
+}
+
+
+    let image=document.getElementById("imgId")
+    let dropdown=document.getElementById("dropDownid")
+
+    image.addEventListener("click",()=>{
+        dropdown.classList.toggle("showProfile")
+    })
+
