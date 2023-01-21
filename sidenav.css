@@ -13,9 +13,10 @@
       color: red;
   }
 
-  #menu-list {
-      /* background: rgb(245, 235, 235); */
-  }
+  /* #menu-list {
+      background: red;
+      height: auto;
+  } */
 
   #menu-list ul li:hover {
       background: rgb(82, 93, 98);
@@ -45,7 +46,7 @@
   }
 
   ​ .sub-menu-1 ul li:hover .sub-menu-2 {
-      display: block;
+      /* display: block; */
       /* background: white; */
       color: black;
       position: absolute;
@@ -53,13 +54,25 @@
   }
 
   #menu-list ul li:hover .sub-menu-1 {
-      display: block;
+      /* display: ; */
       background: rgb(82, 93, 98);
       position: absolute;
       color: white;
       width: 230px;
       /* padding-left: -13px; */
   }
+
+
+#menu-list{
+    margin-top: 70px;
+    position: fixed;
+    margin-left: 10px;
+}
+
+#product-list{
+    margin-left: 320px;
+}
+
 
   ​ #menu-list ul li:hover .sub-menu-1 ul li a {
       color: white;
