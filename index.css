@@ -6,10 +6,11 @@
     font-family: arial, Arial, Helvetica, sans-serif
 }
 
+
 /* <!-- ===========Navbar============= --> */
 .head {
     background-color: #f7f8f9;
-    position: sticky;
+    position: fixed;
     box-shadow: 0 0 2px grey;
     top: 0%;
 }
