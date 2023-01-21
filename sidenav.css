@@ -13,11 +13,7 @@
       color: red;
   }
 
-  /* #menu-list {
-      background: red;
-      height: auto;
-  } */
-
+ 
   #menu-list ul li:hover {
       background: rgb(82, 93, 98);
       /* color: white; */
@@ -29,7 +25,7 @@
 
   ​ .sub-menu-1 {
       /* display: none; */
-      display: none;
+      /* display: none; */
       margin-left: 300px;
       /* padding-left: 2px; */
   }
@@ -64,13 +60,12 @@
 
 
 #menu-list{
-    margin-top: 70px;
-    position: fixed;
+    margin-top: 15px;
     margin-left: 10px;
 }
 
 #product-list{
-    margin-left: 320px;
+    /* margin-left: 320px; */
 }
 
 
