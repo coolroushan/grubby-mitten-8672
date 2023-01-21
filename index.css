@@ -516,6 +516,8 @@ img {
 #footer-top{
     width: 90%;
     margin: auto;
+    padding-bottom: 8px;
+    padding-top: 10px;
 }
 
 #footer-filter ul {
@@ -551,16 +553,23 @@ img {
 }
 
 /* footer-mid-section */
-#footer-mid {
+#footer-mid{
+    background-color: #161d25;
+    padding-top: 15px;
+    border-bottom: 0.5px solid white;
+}
+#footer-mid>div{
     display: flex;
     justify-content: space-between;
     font-family: Arial, Helvetica, sans-serif;
     padding-right: 65px;
+    width: 90%;
+    margin: auto;
     padding-left: 22px;
     font-size: 13px;
     line-height: 23px;
     background-color: #161d25;
-    border-bottom: 0.5px solid white;
+    
 }
 
 
@@ -589,7 +598,9 @@ img {
 }
 
 .connect i {
-    padding: 0px 3px;
+    padding-right: 18px;
+    padding-bottom: 15px;
+    padding-top: 8px;
     font-size: 25px;
 
 }
@@ -598,14 +609,17 @@ img {
     width: 295px;
     margin-bottom: 10px;
 }
-
-#payment-logo {
+#payment-logo{
+    background-color: #161d25; 
+}
+#payment-logo>div{
     display: flex;
     background-color: #161d25;
     font-size: 33px;
     height: 30px;
-    padding-left: 450px; 
+    width: 375px; 
     height: 40px;
+    margin: auto;
 
 }
 
