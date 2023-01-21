@@ -8,7 +8,7 @@
     <script src="https://kit.fontawesome.com/f4b7fe97f9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <script src="index.js"></script>
+    <!-- <script src="index.js"></script> -->
     <link rel="stylesheet" href="sidenav.css">
     <title>Hardware City</title>
 </head>
@@ -21,7 +21,7 @@
         <!-- ===========Navbar============= -->
         <div class="head">
             <div class="navbar-cont">
-                <img src="HARDWARE CITYY.png" alt="">
+                <a href="index.html"><img  src="HARDWARE CITYY.png" alt=""></a>
                 <div class="search-box">
                     <div class="country-select" id="location">
                         <div class="select">
@@ -31,7 +31,11 @@
                             <i class="fa-solid fa-angle-down" id="arrow"></i>
 
                         </div>
+            
                         <ul class="option" id="list">
+                            <a style="text-decoration:none" href="products.html"><li class="option1" onclick="myFunction('All Categories')">
+                                <p >All Categories</p>
+                            </li></a>
                             <li class="option1" onclick="myFunction('Abrasives')">
                                 <p>Abrasives</p>
                             </li>
@@ -83,7 +87,7 @@
 
                     <div class="dropDown" id="dropDownid">
                         <div class="Profile">
-                            <div> <img width="65px" src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+                            <div> <img style="width:65px" src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
                                     alt=""></div>
                             <div style="margin-left:15px">
                                 <p style="margin-bottom:5px">Hello,</p>
@@ -131,18 +135,20 @@
                         <p style="font-size: small;"><b>Order</b></p>
                     </div>
                 </div>
-                <div style="display:flex;color:white;margin-left:10px" class="msg">
+                <a style="text-decoration:none" href="cart.html"><div style="display:flex;color:white;margin-left:10px" class="msg">
                     <p><i class="fa-solid fa-cart-plus"></i></p>
                     <p style="font-size:small;margin-left:5px"><b>CART</b></p>
-                </div>
-                <div style="margin-left:25px" class="app">
-                    <img src="https://www.industrybuying.com/static/images/android-paly.png" alt="">
-                    <img style="margin-left:5px" src="https://www.industrybuying.com/static/images/ios-play.png" alt="">
-                    <p style="color:white">Download the APP!</p>
-                    <!-- <h4 style="cursor: pointer;"><a href="/clonePro/silky-dolls-6712/login.html"></a>Login</h4> -->
-
-                </div>
-
+                </div></a>
+                 <div>
+                    <div class="add">
+                        <img  src="https://www.industrybuying.com/static/images/android-paly.png" alt="">
+                        <hr>
+                        <img style="margin-left:5px" src="https://www.industrybuying.com/static/images/ios-play.png" alt="">
+                    </div>
+                    <p style="color:white;margin-left:20px;">Download the APP!</p>
+                 </div>
+                
+ 
 
 
             </div>
@@ -1636,5 +1642,5 @@
         <a class="gotopbtn" href=""><i class="fas fa-arrow-up"></i></a>
     </div>
 </body>
-
+<script src="index.js"></script>
 </html>
