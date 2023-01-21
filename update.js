@@ -8,7 +8,7 @@ function render(){
     fetch('https://63c55501f3a73b347853986b.mockapi.io/users')
     .then(res => res.json())
     .then((data)=>{
-        console.log(true)
+        // console.log(true)
         // arr.push
         shopping(data)
     })
@@ -26,8 +26,47 @@ let empNameInput = document.getElementById("employee-name");
 let empImgInput = document.getElementById("employee-image");
 let empDeptInput = document.getElementById("employee-dept");
 let empSalaryInput = document.getElementById("employee-salary");
+let add_employee = document.getElementById('add-employee')
 
 
+
+//--------------------------------------------------------------   ADDING NEW PRODUCT   -----------------------------
+add_employee.addEventListener('click',()=>{
+    let productname = empNameInput.value;
+    let productimage = empImgInput.value;
+    let productdescription = empDeptInput.value;
+    let productprice = empSalaryInput.value;
+
+    if(productname !== "" && productimage !== "" && productdescription !== "" && productprice !== ""){
+        let userObj = {
+            name:productname,
+            image:productimage,
+            description:productdescription,
+            price:productprice
+        }
+        createProduct(userObj)
+    } else {
+        alert('Please fill remaining data')
+    }
+})
+
+
+// ------------------------------------------------------------------- CREATING NEW PRODUCT FUNCTION-------------
+function createProduct(userObj){
+    fetch('https://63c55501f3a73b347853986b.mockapi.io/users',{
+        method: 'POST',
+        headers:{
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(userObj)
+    })
+    .then((res)=>{
+        return res.json()
+    })
+    .then((data)=>{
+        console.log(data)
+    })
+}
 
 function shopping(data){
     
