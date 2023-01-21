@@ -28,3 +28,25 @@ body {
 #sidenav{
     padding-left: 70px;
 }
+
+#main{
+  display: flex;
+  margin-left: 200px;
+  width: 100%;
+}
+
+#table{
+  width: 80%;
+}
+
+table, th, tr{
+  /* border: 1px solid black; */
+  height: 13px;
+  padding: 5px;
+  line-height: 28px;
+  font-size: 20px;
+}
+
+#tablebody{
+  text-align: center;
+}

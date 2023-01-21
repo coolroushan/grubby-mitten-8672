@@ -10,7 +10,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div>
+    <div id="main">
         <div class="sidebar">
             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -31,9 +31,28 @@
             <a  id="sidenav"   class="fa fa-fw fa-envelope"></a>
             <a href="adminProduct.html"><i></i> Products</a>
         </div>
-        <nav> <h1> Hardware <span> City </span></h1> </nav>
-        <hr>
+       
+        <div id="table">
+            <nav style="width: 1005;"> <h1 style="text-align: center; font-size: 50px;"> Hardware <span> City </span></h1> </nav>
+            <hr>
+            
+            <table style="width: 100%;">
+                <thead>
+                    <tr>
+                        <th>S.No.</th>
+                        <th>Name</th>
+                        <th>Email Address</th>
+                        <th>Phone No.</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
+                <tbody id="tablebody">
+
+                </tbody>
+            </table>
+        </div>
     </div>
     
 </body>
+<script src="client.js"></script>
 </html>

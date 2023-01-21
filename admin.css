@@ -49,7 +49,7 @@ nav {
 }
 
 nav div{
-    padding: 30px;
+    padding: 10px;
 }
 
 #navdiv{
@@ -116,6 +116,14 @@ nav>div>input{
 }
 
 /*                                                 TABLE */
-table{
-    border: 1px solid black;
+table, th, tr{
+    /* border: 1px solid black; */
+    height: 13px;
+    padding: 5px;
+    line-height: 28px;
+    font-size: 20px;
+}
+
+#tablebody{
+    text-align: center;
 }

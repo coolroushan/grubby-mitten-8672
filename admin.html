@@ -32,9 +32,10 @@
             <a href="adminProduct.html"><i></i> Products</a>
         </div>
         <div id="main">
-            <nav> 
+            <nav style="justify-content: space-evenly;"> 
                 <div> <h1> Hardware City </h1> </div> 
-                <div><h3 id="username"></h3></div>    
+                <div style="padding-top: 15px; font-size: 30px;"><h3 id="username">Welcome  <span id="name" style="color:red">admin</span></h3></div> 
+                <div><a href="index.html">Logout</a></div>   
             </nav>
             <hr>    
             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -75,7 +76,7 @@
             </div>
             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                 <div>
-                    <h3>Recent Orders</h3>
+                    <h3 style="text-align: center; color: rgb(151, 151, 206); font-size: 40px;">Recent Orders</h3>
                     <table style="width: 100%;">
                         <thead >
                             <tr>
@@ -87,15 +88,9 @@
                                 <th>Order status</th>       
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
-                            </tr>
+                        <br><br>
+                        <tbody id="tablebody">
+                            
                         </tbody>
                     </table>
                 </div>
