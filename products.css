@@ -1,3 +1,5 @@
+/* ---------------------------------------------------------Fetch Product CSS Part---------------------------------------------------------- */
+
 #Fetch-Product {
   display: flex;
   margin: auto;
@@ -29,6 +31,16 @@
   background-color: rgb(251, 251, 251);
   box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
 }
+
+.sidebar-list{
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.sidebar-list>div{
+ padding-top: 5px;
+}
+
 
 .sidebar-title {
   text-decoration: none;
@@ -62,13 +74,432 @@ hr {
   width: 92%;
 }
 
-#searchbar{
-  display: flex;
- justify-content: center;
- 
+/* ---------------------------------------------------------Navigation Bar CSS Part---------------------------------------------------------- */
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: arial, Arial, Helvetica, sans-serif;
 }
 
-#Search{
-  width: 500px;
-  height: 25px;
+.head {
+  background-color: #f7f8f9;
+  position: sticky;
+  box-shadow: 0 0 2px grey;
+  top: 0%;
 }
+
+.navbar-cont {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  margin: auto;
+  background-color: #232f3e;
+}
+
+.navbar-cont > a > img {
+  width: 190px;
+  height: auto;
+  margin-left: 25px;
+}
+
+.country-select {
+  margin-left: 50px;
+  margin-left: 20px;
+}
+
+.select i {
+  font-size: 15px;
+}
+
+.select {
+  width: 130px;
+  height: 45px;
+  padding: 10px 12px;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: orangered;
+  color: white;
+}
+
+.option1 {
+  display: flex;
+  padding: 10px;
+  width: 250px;
+  cursor: pointer;
+}
+
+.option1:hover {
+  background-color: #c7dcff;
+}
+
+.option p {
+  margin-left: 10px;
+  color: #444;
+}
+
+.option1 i {
+  color: #839a83;
+}
+
+.option {
+  box-shadow: 0 0 10px gray;
+  background-color: white;
+  display: none;
+  position: absolute;
+  top: 65px;
+}
+
+.showing {
+  display: block;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.search-box {
+  display: flex;
+  margin-left: 60px;
+}
+
+.search-box > p > i {
+  background-color: orangered;
+  color: white;
+  padding: 14px;
+  font-size: 15px;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+  border: 1px solid orangered;
+}
+
+.search {
+  padding: 10px;
+  width: 400px;
+  font-size: 15px;
+  border: 1px solid orangered;
+}
+
+.language {
+  margin-left: 55px;
+}
+
+.eng {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.change {
+  background-color: white;
+  box-shadow: 0 0 10px grey;
+  width: 130px;
+  display: none;
+  position: absolute;
+  top: 65px;
+  margin-left: 55px;
+}
+
+.change li {
+  list-style: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.change li:hover {
+  background-color: #c7dcff;
+}
+
+.display {
+  display: block;
+}
+
+.rotate2 {
+  transform: rotate(180deg);
+}
+
+.language {
+  display: flex;
+  cursor: pointer;
+}
+
+.msg i {
+  font-size: 22px;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+.image img {
+  width: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 65px;
+}
+
+.Profile {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 20px 0;
+}
+
+.dropDown {
+  width: 350px;
+  box-shadow: 0 0 10px grey;
+  padding: 15px;
+  background-color: white;
+  display: none;
+  position: absolute;
+  top: 65px;
+  margin-left: 10px;
+}
+
+.dropDown ul li {
+  display: flex;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  color: black;
+  font-size: 17px;
+}
+
+.dropDown ul li:hover {
+  background-color: #c7dcff;
+}
+
+.dropDown ul {
+  margin-top: 20px;
+}
+
+.dropDown ul li p {
+  margin-left: 10px;
+  font-size: 17px;
+}
+
+.showProfile {
+  display: block;
+}
+
+#cate {
+  display: flex;
+}
+
+.categories {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  margin: 10px 0 0 25px;
+  background-color: 0 0 10px grey;
+}
+
+.categories ul {
+  display: flex;
+  list-style: none;
+  cursor: pointer;
+}
+
+.categories ul li {
+  margin-left: 25px;
+}
+
+.add {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  margin-left: 45px;
+}
+
+.add > img {
+  width: 20%;
+  height: 20%;
+  cursor: pointer;
+}
+
+/* ------------------------------------------------Footer CSS Part -------------------------------------------------------------------*/
+
+#footer{
+  margin-top: 30px;
+}
+#footer-option {
+  display: flex;
+  width: 515px;
+  margin: auto;
+  padding-top: 10px;
+  height: 40px;
+  text-align: center;
+  padding-bottom: 10px;
+  justify-content: space-between;
+  color: #eee;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#footer-filter {
+  background-color: #223143;
+  padding-bottom: 20px;
+ 
+
+}
+#footer-top{
+  width: 90%;
+  margin: auto;
+  padding-top: 10px;
+}
+
+#footer-filter ul {
+  list-style: none;
+}
+
+#footer-filter a {
+  color: rgb(219, 217, 217);
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#footer-filter a:hover {
+  text-decoration: underline;
+}
+
+/* #footer-top {
+      =======#footer-filter a {
+          color: #eee;
+          text-decoration: none;
+          font-family: Arial, Helvetica, sans-serif;
+      } */
+
+#footer-top {
+  display: flex;
+  justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-right: 65px;
+  padding-left: 22px;
+  font-size: 13px;
+  line-height: 23px;
+
+}
+
+/* footer-mid-section */
+#footer-mid {
+  display: flex;
+  justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-right: 65px;
+  padding-left: 22px;
+  font-size: 13px;
+  line-height: 23px;
+  background-color: #161d25;
+  border-bottom: 0.5px solid white;
+  width: 90%;
+  margin: auto;
+  
+}
+
+#footer-mid1{
+margin: auto;
+background-color:#161d25 ;
+padding-top: 20px;
+}
+
+
+#footer-mid ul {
+  list-style: none;
+  font-size: 13px;
+}
+
+#footer-mid a {
+  color: rgb(219, 217, 217);
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#footer-mid a:hover {
+  text-decoration: underline;
+}
+
+#footer-mid p {
+  color: rgb(219, 217, 217);
+  font-size: 17px;
+}
+
+#newsletter {
+  width: 250px;
+}
+
+.connect i {
+  padding: 0px 3px;
+  font-size: 25px;
+
+}
+
+#help {
+  width: 295px;
+  margin-bottom: 10px;
+}
+
+#payment-logo {
+  display:block;
+  background-color: #161d25;
+  font-size: 33px;
+  height: 40px;
+  padding-left: 550px; 
+  align-items: center;
+  
+  
+
+}
+
+
+
+#payment-logo span {
+  font-size: 18px;
+
+  color: rgb(254, 249, 249);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 10px;
+  padding-top: 6px;
+  padding-right: 15px;
+}
+
+#payment-logo i {
+  padding-right: 20px;
+  padding-top: 3px;
+}
+
+#copyright {
+  height: 33px;
+  text-align: center;
+  padding-top: 10px;
+  background-color: #223143;
+  color: #eee;
+  font-size: 13px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+#copyright a {
+  text-decoration: none;
+  color: rgb(32, 101, 191);
+}
+
+/* scroll-top */
+#scroll-top a {
+  text-decoration: none;
+}
+
+.gotopbtn {
+  position: fixed;
+  text-align: center;
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(125, 125, 125);
+  bottom: 30px;
+  right: 10px;
+  color: #eee;
+}
+
+
+

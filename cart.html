@@ -7,15 +7,162 @@
     <title>Cart</title>
   </head>
   <link rel="stylesheet" href="cart.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
   <body>
+
+<!-------------------------------------------------------------Navigation Bar div--------------------------------------------------------------->
+  <nav>
+    <!-- navbar -->
+    <p id="front">For any query, email us at care@hardwarecity.com or call us on +91 8448449073</p>
+    <!-- ===========Navbar============= -->
+    <div class="head">
+        <div class="navbar-cont">
+            <a href="index.html"><img  src="HARDWARE CITYY.png" alt=""></a>
+            <div class="search-box">
+                <div class="country-select" id="location">
+                    <div class="select">
+                        <p id="text">
+                            All Categories
+                        </p>
+                        <i class="fa-solid fa-angle-down" id="arrow"></i>
+
+                    </div>
+        
+                    <ul class="option" id="list">
+                        <a style="text-decoration:none" href="products.html"><li class="option1" onclick="myFunction('All Categories')">
+                            <p >All Categories</p>
+                        </li></a>
+                        <li class="option1" onclick="myFunction('Abrasives')">
+                            <p>Abrasives</p>
+                        </li>
+                        <li class="option1" onclick="myFunction('Adhesives sealants and tape')">
+
+                            <p>Adhesives sealants and tape</p>
+                        </li>
+                        <li class="option1" onclick="myFunction('Agriculture Garden & Landscaping')">
+
+                            <p>Agriculture Garden & Landscaping</p>
+                        </li>
+                        <li class="option1" onclick="myFunction('Appliances')">
+
+                            <p>Appliances</p>
+                        </li>
+                        <li class="option1" onclick="myFunction('Bearings')">
+
+                            <p>Bearings</p>
+                        </li>
+                        <li class="option1" onclick="myFunction('Cleaning')">
+
+                            <p>Cleaning</p>
+                        </li>
+                        <li class="option1" onclick="myFunction('Corporate Gifts')">
+
+                            <p>Corporate Gifts</p>
+                        </li>
+                        <li class="option1" onclick="myFunction('Electrical')">
+
+                            <p>Electrical</p>
+                        </li>
+                        <li class="option1" onclick="myFunction('Electronics & Robotics')">
+
+                            <p>Electronics & Robotics</p>
+                        </li>
+
+                    </ul>
+                </div>
+                <input type="text" oninput="search()" class="search"
+                    placeholder="Search Products by title,supplier,sku,categorie,etc.... " id="searchid">
+                <p><i class="fa-solid fa-magnifying-glass" id="search_icon"></i></p>
+            </div>
+
+            <div class="logo">
+                <div class="image" id="imgId">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+
+                </div>
+
+                <div class="dropDown" id="dropDownid">
+                    <div class="Profile">
+                        <div> <img style="width:65px" src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+                                alt=""></div>
+                        <div style="margin-left:15px">
+                            <p style="margin-bottom:5px">Hello,</p>
+                            <h4 style="margin-bottom:5px">CHUNKY SHARMA</h4>
+                            <p style="margin-bottom:5px"><u> View and edit profile</u></p>
+                        </div>
+                    </div>
+                    <hr>
+                    <ul>
+                        <li>
+                            <p>Sign In</p>
+                        </li>
+                        <li>
+                            <p>Pay Latter</p>
+                        </li>
+
+                        <li>
+
+                            <p>Quotation</p>
+                        </li>
+                        <li>
+                            <hr>
+
+                            <p>Purchase List</p>
+                        </li>
+                        <li>
+
+                            <p>Quick Order</p>
+                        </li>
+                        <hr>
+                        <li>
+                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                            <p>Log Out</p>
+                        </li>
+                        <hr>
+                    </ul>
+                </div>
+            </div>
+            <div style="display:flex;color:white;" class="msg">
+                <div style="margin-left: 5px;">
+                    <p><i class="fa-solid fa-location-dot"></i></p>
+                </div>
+                <div style="margin-left:5px">
+                    <p style="font-size: small;">Track</p>
+                    <p style="font-size: small;"><b>Order</b></p>
+                </div>
+            </div>
+            <a style="text-decoration:none" href="cart.html"><div style="display:flex;color:white;margin-left:10px" class="msg">
+                <p><i class="fa-solid fa-cart-plus"></i></p>
+                <p style="font-size:small;margin-left:5px"><b>CART</b></p>
+            </div></a>
+             <div>
+                <div class="add">
+                    <img  src="https://www.industrybuying.com/static/images/android-paly.png" alt="">
+                    <hr>
+                    <img style="margin-left:5px" src="https://www.industrybuying.com/static/images/ios-play.png" alt="">
+                </div>
+                <p style="color:white;margin-left:20px;">Download the APP!</p>
+             </div>
+            
+
+
+
+        </div>
+    </div>
+</nav>
+ 
     
+<!-------------------------------------------------------------Cart Products Count Div---------------------------------------------------------->
     <div id="cart-info">
       <div>
         <div>Cart Total Price:- <span id="order-total">0</span></div>
         <div>Total Items:- <span id="product-count">0</span></div>
-        <div><bUtton id="place-order-btn">Place Order</bUtton></div>
+        <div><bUtton onClick="window.location.href='payment.html'" id="place-order-btn">Place Order</bUtton></div>
       </div>
     </div>
+
+
+<!-------------------------------------------------------------Cart Products Div----------------------------------------------------------------->
 
     <div id="cart-container">
       <!-- Here Append All the Cart-Products Cards here-->

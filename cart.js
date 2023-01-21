@@ -18,6 +18,11 @@ function displayProduct(out) {
 
 document.querySelector("#cart-container").innerHTML = "";
 
+
+
+//Get the Data from CartData Array to Show Products By Applying For Each Loop
+
+
 out.forEach((elem, i) => {
 
 let div = document.createElement("div");
@@ -30,17 +35,21 @@ let productName = document.createElement("p");
     productName.style.fontFamily = "Arial, Helvetica, sans-serif";
     productName.style.fontSize = "15px";
     productName.style.color = "rgb(66,66,66)";
+    productName.style.marginTop="10px"
 
 let productdes = document.createElement("p");
     productdes.innerText = elem.description;
     productdes.style.fontFamily = "Arial, Helvetica, sans-serif";
     productdes.style.fontSize = "12px";
+    productdes.style.marginTop="10px"
 
 let productprice = document.createElement("h3");
     productprice.innerText = `Rs. ${elem.price}`;
     productprice.style.fontFamily = "Arial, Helvetica, sans-serif";
     productprice.style.fontSize = "15px";
     productprice.style.color = "rgb(233,97,30)";
+    productprice.style.marginTop="10px"
+    productprice.style.marginBottom="10px"
 
 let btn = document.createElement("button");
     btn.textContent = "REMOVE";
@@ -174,3 +183,21 @@ function decrementvalue(elem) {
   document.querySelector("#order-total").textContent = sum;
   displayProduct(cartdata);
 }
+
+
+// ----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+// To Search Products in Cart Page
+
+function search(){
+  let q=document.querySelector("#searchid").value
+ 
+ let newData=cartdata.filter(function(elem){
+     return elem.name.toLocaleLowerCase().includes(q.toLocaleLowerCase());
+ });
+ 
+ displayProduct(newData)
+ }
+ 

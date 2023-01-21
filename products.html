@@ -7,9 +7,150 @@
     <title>Products</title>
   </head>
   <link rel="stylesheet" href="products.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
   <body>
   
-  <div id="searchbar"><input type="text" oninput="search()" placeholder="Search Products" id="Search"></div>
+  <!-------------------------------------------------------------Navigation Bar div--------------------------------------------------------------->
+  <nav>
+    <!-- navbar -->
+    <p id="front">For any query, email us at care@hardwarecity.com or call us on +91 8448449073</p>
+    <!-- ===========Navbar============= -->
+    <div class="head">
+        <div class="navbar-cont">
+            <a href="index.html"><img  src="HARDWARE CITYY.png" alt=""></a>
+            <div class="search-box">
+                <div class="country-select" id="location">
+                    <div class="select">
+                        <p id="text">
+                            All Categories
+                        </p>
+                        <i class="fa-solid fa-angle-down" id="arrow"></i>
+
+                    </div>
+        
+                    <ul class="option" id="list">
+                        <a style="text-decoration:none" href="products.html"><li class="option1" onclick="myFunction('All Categories')">
+                            <p >All Categories</p>
+                        </li></a>
+                        <li class="option1" onclick="myFunction('Abrasives')">
+                            <p>Abrasives</p>
+                        </li>
+                        <li class="option1" onclick="myFunction('Adhesives sealants and tape')">
+
+                            <p>Adhesives sealants and tape</p>
+                        </li>
+                        <li class="option1" onclick="myFunction('Agriculture Garden & Landscaping')">
+
+                            <p>Agriculture Garden & Landscaping</p>
+                        </li>
+                        <li class="option1" onclick="myFunction('Appliances')">
+
+                            <p>Appliances</p>
+                        </li>
+                        <li class="option1" onclick="myFunction('Bearings')">
+
+                            <p>Bearings</p>
+                        </li>
+                        <li class="option1" onclick="myFunction('Cleaning')">
+
+                            <p>Cleaning</p>
+                        </li>
+                        <li class="option1" onclick="myFunction('Corporate Gifts')">
+
+                            <p>Corporate Gifts</p>
+                        </li>
+                        <li class="option1" onclick="myFunction('Electrical')">
+
+                            <p>Electrical</p>
+                        </li>
+                        <li class="option1" onclick="myFunction('Electronics & Robotics')">
+
+                            <p>Electronics & Robotics</p>
+                        </li>
+
+                    </ul>
+                </div>
+                <input type="text" oninput="search()" class="search"
+                    placeholder="Search Products by title,supplier,sku,categorie,etc.... " id="searchid">
+                <p><i class="fa-solid fa-magnifying-glass" id="search_icon"></i></p>
+            </div>
+
+            <div class="logo">
+                <div class="image" id="imgId">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+
+                </div>
+
+                <div class="dropDown" id="dropDownid">
+                    <div class="Profile">
+                        <div> <img style="width:65px" src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+                                alt=""></div>
+                        <div style="margin-left:15px">
+                            <p style="margin-bottom:5px">Hello,</p>
+                            <h4 style="margin-bottom:5px">CHUNKY SHARMA</h4>
+                            <p style="margin-bottom:5px"><u> View and edit profile</u></p>
+                        </div>
+                    </div>
+                    <hr>
+                    <ul>
+                        <li>
+                            <p>Sign In</p>
+                        </li>
+                        <li>
+                            <p>Pay Latter</p>
+                        </li>
+
+                        <li>
+
+                            <p>Quotation</p>
+                        </li>
+                        <li>
+                            <hr>
+
+                            <p>Purchase List</p>
+                        </li>
+                        <li>
+
+                            <p>Quick Order</p>
+                        </li>
+                        <hr>
+                        <li>
+                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                            <p>Log Out</p>
+                        </li>
+                        <hr>
+                    </ul>
+                </div>
+            </div>
+            <div style="display:flex;color:white;" class="msg">
+                <div style="margin-left: 5px;">
+                    <p><i class="fa-solid fa-location-dot"></i></p>
+                </div>
+                <div style="margin-left:5px">
+                    <p style="font-size: small;">Track</p>
+                    <p style="font-size: small;"><b>Order</b></p>
+                </div>
+            </div>
+            <a style="text-decoration:none" href="cart.html"><div style="display:flex;color:white;margin-left:10px" class="msg">
+                <p><i class="fa-solid fa-cart-plus"></i></p>
+                <p style="font-size:small;margin-left:5px"><b>CART</b></p>
+            </div></a>
+             <div>
+                <div class="add">
+                    <img  src="https://www.industrybuying.com/static/images/android-paly.png" alt="">
+                    <hr>
+                    <img style="margin-left:5px" src="https://www.industrybuying.com/static/images/ios-play.png" alt="">
+                </div>
+                <p style="color:white;margin-left:20px;">Download the APP!</p>
+             </div>
+            
+
+
+
+        </div>
+    </div>
+</nav>
+ 
 
 <div id="Fetch-Product"> 
      
@@ -72,7 +213,7 @@
 <!-----------------------------------------------------------Filter by Price Category--------------------------------------------------------------> 
 <div class="sidebar-filter area">
 
-<a href="#sidebar-filter" class="sidebar-title" data-bs-toggle="collapse">Filter by Price</a>
+<a href="#sidebar-filter" class="sidebar-title" data-bs-toggle="collapse">Price Range</a>
 <hr>
 
   <div id="sidebar-filter" class="collapse show">
@@ -106,12 +247,190 @@
 </div>
 
 </div>
+
+
 <!-------------------------------------------------------------Product Section Div----------------------------------------------------------------->
   <div id="Product-Section">
     <!-- Append the Products Here -->
   </div>
 
 </div>
+
+
+<footer id="footer">
+    <!-- footer-top -->
+    <div id="footer-filter">
+        <div id="footer-option">
+            <div>
+                <h4>Shop All Categories</h4>
+            </div>
+            <div>
+                <h4>Shop All Brands</h4>
+            </div>
+            <div>
+                <h4>Popular Searches</h4>
+            </div>
+            
+        </div>
+        <hr style="width: 90%;margin: auto;">
+        <div id="footer-top">
+            <div class="top-list">
+                <ul>
+                    <li><a href="#">LED Lights</a></li>
+                    <li><a href="#">Paints</a></li>
+                    <li><a href="#">Corporate Gifts</a></li>
+                    <li><a href="#">Geyser</a></li>
+                    <li><a href="#">Welding</a></li>
+                    <li><a href="#">Tooling and Cutting</a></li>
+                    <li><a href="#">Abrasives</a></li>
+                </ul>
+            </div>
+            <div class="top-list">
+                <ul>
+                    <li><a href="#">Power Tools</a></li>
+                    <li><a href="#">Pumps</a></li>
+                    <li><a href="#">Safety</a></li>
+                    <li><a href="#">Bearings</a></li>
+                    <li><a href="#">Cleaning</a></li>
+                    <li><a href="#">Dimension Measurement</a></li>
+                    <li><a href="#">Electrical</a></li>
+                </ul>
+            </div>
+            <div class="top-list">
+                <ul>
+                    <li><a href="#">Electronics & Robotics</a></li>
+                    <li><a href="#">Fasteners</a></li>
+                    <li><a href="#">Furniture and Food Service</a></li>
+                    <li><a href="#">Hand Tools</a></li>
+                    <li><a href="#">Hydraulics</a></li>
+                    <li><a href="#">IT & Electronics</a></li>
+                    <li><a href="#">Industrial Automation</a></li>
+                </ul>
+            </div>
+            <div class="top-list">
+                <ul>
+                    <li><a href="#">Lab Supplies</a></li>
+                    <li><a href="#">Machinery</a></li>
+                    <li><a href="#">Machining Accessories</a></li>
+                    <li><a href="#">Medical Supplies & Equipment</a></li>
+                    <li><a href="#">Office Supplies</a></li>
+                    <li><a href="#">Plumbing</a></li>
+                    <li><a href="#">Pneumatics</a></li>
+                </ul>
+            </div>
+            <div class="top-list">
+                <ul>
+                    <li><a href="#">Automotive Maintenance and Accessories</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">See all Categories ></a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- footer-mid -->
+
+    <div id="footer-mid1">
+
+        
+    <div id="footer-mid">
+        <div>
+            <ul>
+                <li>
+                    <p>Company</p>
+                </li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Sell On Industrybuying</a></li>
+                <li><a href="#">Special offers</a></li>
+                <li><a href="#">Articles</a></li>
+            </ul>
+        </div>
+        <div id="help">
+            <div>
+                <ul>
+                    <li>
+                        <p>Help</p>
+                    </li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Report Infringement</a></li>
+                    <li><a href="#">Cancellations & Returns</a></li>
+                </ul>
+            </div>
+            <div>
+                <div>
+                    <p style="padding-left: 0px; font-size: 13px;">Have a question or want to place an order?</p>
+                </div>
+                <div style="margin-left: 0px;color: rgb(219, 217, 217);"><i class="fa-solid fa-phone-volume"></i>
+                    <i style="padding-left: 0px; font-size: 13px;">Helpline Number: Call: +91 1234567890</i>
+                    <i style="padding-left: 0px; font-size: 13px;"> (Mon-Sun: 9am-6pm)</i>
+                </div>
+
+
+            </div>
+        </div>
+        <div>
+            <ul class="connect">
+                <li>
+                    <p>Connect with us</p>
+                </li>
+                <li><a href="https://www.facebook.com/industrybuying" target="_blank">
+                        <i style="color: rgb(32, 101, 191);" class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/industrybuying" target="_blank">
+                        <i style="color: rgb(32, 101, 191);" class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.pinterest.com/industrybuy0039/" target="_blank">
+                        <i style="color: brown;" class="fa-brands fa-pinterest-p"></i></a>
+                </li>
+            </ul>
+            <ul class="connect">
+                <li>
+                    <p>Download Our APP!</p>
+                </li>
+                <li><a href="https://play.google.com/store/apps/details?id=industrybuying.com.industrybuying&pli=1"
+                        target="_blank">
+                        <i style="color: rgb(48, 169, 48);" class="fa-brands fa-google-play"></i></a>
+                    <a href="https://apps.apple.com/in/app/industrybuying/id1602345204" target="_blank">
+                        <i style="color: rgb(32, 101, 191);" class="fa-brands fa-app-store-ios"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div id="newsletter">
+            <p>Subscribe to Newsletter</p>
+            <form>
+                <div>
+                    <input style="height: 32px; width: 150px; border: none; border-radius: 2px;" type="email"
+                        placeholder="example@gmail.com" />
+                    <button
+                        style="height: 35px; width: 45px; background-color: rgb(220, 70, 15); border: none; border-radius: 2px;"
+                        type="submit"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </form>
+            <p style="font-size: 13px;">Sign up to get exclusive offers from our favorite brands and to be well up
+                in the news</p>
+        </div>
+    </div>
+
+
+
+    </div>
+
+
+
+
+    <div id="payment-logo">
+        <span>Payment Options</span>
+        <i style="color: rgb(167, 29, 29);" class="fa-brands fa-cc-visa"></i>
+        <i style="color: rgb(167, 29, 29);" class="fa-brands fa-cc-mastercard"></i>
+        <i style="color: rgb(32, 101, 191);" class="fa-brands fa-google-pay"></i>
+    </div>
+    <div id="copyright">
+        <span>Copyright © industrybuying.com 2013-2022 All Right Reserved |</span>
+        <a href="privacy.html"><span>Privacy Policy | Terms & Conditions</span></a>
+    </div>
+    
+</footer>
+
 
   </body>
 </html>
