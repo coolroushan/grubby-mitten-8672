@@ -3,7 +3,7 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    font-family: arial, Arial, Helvetica, sans-serif
+    font-family: arial, Arial, Helvetica, sans-serif;
 }
 
 
@@ -17,7 +17,7 @@
 
 .navbar-cont {
     display: flex;
-    gap: 15px;
+    gap: 10px;
     align-items: center;
     width: 100%;
     height: 80px;
@@ -474,6 +474,29 @@ img {
     justify-content: center;
     height: 50%;
 }
+
+.right-mid hr{
+    border: 1px dashed gray;
+    margin: 10px 0;
+}
+.right-mid h3{
+    text-align: end;
+}
+
+.right-mid>div>div{
+    text-align: center;
+}
+
+.right-mid div button{
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    width: 85%;
+   border: solid 1px #fa8848;
+   background-color: #f7f8f9;
+   text-transform: uppercase;
+}
+
 
 /* new arrivals */
 #new-arrivals {
