@@ -22,7 +22,7 @@
 
 #products{
   /* padding-left: 300px; */
-  padding: 50px 150px;
+  padding: 50px 10px;
   display: grid;
   gap: 50px;
   grid-template-columns: repeat(3,1fr);
@@ -69,4 +69,16 @@ display: block;
 
 #sidenav{
   padding-left: 70px;
+}
+/* ------------------------- */
+#products{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  line-height: 20px;
+}
+#products img{
+  height: 100px;
+}
+.card__title{
+  font-size: 20px;
 }

@@ -2,17 +2,20 @@ GET https://63c55501f3a73b347853986b.mockapi.io/users?page=1&limit=10
 
 ###
 
-GET https://63c55501f3a73b347853986b.mockapi.io/users
-
+GET https://63c55501f3a73b347853986b.mockapi.io/users/54
 
 ###
 
-POST https://63c55501f3a73b347853986b.mockapi.io/users
+DELETE https://63c55501f3a73b347853986b.mockapi.io/users/51
+
+###
+
+PUT https://63c55501f3a73b347853986b.mockapi.io/users/54
 Content-Type: application/json
 
   {
-    "name": "camera",
-    "image": "/images/avatar/avatar1.jpeg",
+    "name": "Air Pump",
+    "image": "https://static1.industrybuying.com/products/pneumatics/air-compressors/air-tank-compressor/PNE.AIR.24347772_1668115052521.webp",
     "description": "by Fulcrum",
-    "price": 30000
+    "price": 11111
   }
