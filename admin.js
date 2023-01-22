@@ -3,7 +3,7 @@ let visitors = document.getElementById('Visitors')
 let products = document.getElementById("Product")
 
 let count = JSON.parse(localStorage.getItem('count'))||0
-let client = JSON.parse(localStorage.getItem('client'))||[]
+
 
 let arr = []
 
@@ -21,9 +21,12 @@ function render(){
         // shopping(data)
     })
 }
+
+/// ----------------------------------------- user data count-------------------------------
+let client = JSON.parse(localStorage.getItem('UserData'))||[]
 render()
 window.addEventListener('load', ()=>{
-    count++
+    // count++
     localStorage.setItem('count', JSON.stringify(count))
     visitors.innerText = count++
     user.innerText = client.length
@@ -32,45 +35,48 @@ window.addEventListener('load', ()=>{
 /////////////------------------------------table--------------------
 let tbody = document.getElementById('tablebody')
 
-let orders = [
-    {
-        category: "by AgriPro",
-        name: 'camera',
-        quantity: 4,
-        Price: 3467,
-        Orderstatus: 'Pending'
-    },
-    {
-        category: "by AgriPro",
-        name: 'camera',
-        quantity: 4,
-        Price: 3467,
-        Orderstatus: 'Pending'
-    },
-    {
-        category: "by AgriPro",
-        name: 'camera',
-        quantity: 4,
-        Price: 3467,
-        Orderstatus: 'Pending'
-    },
-    {
-        category: "by AgriPro",
-        name: 'camera',
-        quantity: 4,
-        Price: 3467,
-        Orderstatus: 'Pending'
-    },
-    {
-        category: "by AgriPro",
-        name: 'camera',
-        quantity: 4,
-        Price: 3467,
-        Orderstatus: 'Pending'
-    }
+// let orders = [
+//     {
+//         category: "by AgriPro",
+//         name: 'camera',
+//         quantity: 4,
+//         Price: 3467,
+//         Orderstatus: 'Pending'
+//     },
+//     {
+//         category: "by AgriPro",
+//         name: 'camera',
+//         quantity: 4,
+//         Price: 3467,
+//         Orderstatus: 'Pending'
+//     },
+//     {
+//         category: "by AgriPro",
+//         name: 'camera',
+//         quantity: 4,
+//         Price: 3467,
+//         Orderstatus: 'Pending'
+//     },
+//     {
+//         category: "by AgriPro",
+//         name: 'camera',
+//         quantity: 4,
+//         Price: 3467,
+//         Orderstatus: 'Pending'
+//     },
+//     {
+//         category: "by AgriPro",
+//         name: 'camera',
+//         quantity: 4,
+//         Price: 3467,
+//         Orderstatus: 'Pending'
+//     }
 
-]
+// ]
 
+
+///---------------------------table of admin home page
+let orders = JSON.parse(localStorage.getItem('ProductData'))||[]
 
 
 function data(){
@@ -83,7 +89,7 @@ function data(){
         td1.innerText = i+1
 
         let td2 = document.createElement('td')
-        td2.innerText = orders[i].category
+        td2.innerText = orders[i].description
 
         let td3 = document.createElement('td')
         td3.innerText = orders[i].name
@@ -92,11 +98,11 @@ function data(){
         td4.innerText = orders[i].quantity
 
         let td5 = document.createElement('td')
-        td5.innerText = orders[i].Price
+        td5.innerText = (orders[i].price)*(orders[i].quantity)
 
         let td6 = document.createElement('td')
         
-        if( i === 0){
+        if( i === orders.length-1){
         setTimeout(() => {
             td6.innerText = 'Processing'
             td6.style.color = 'yellow'

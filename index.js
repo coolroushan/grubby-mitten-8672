@@ -192,3 +192,12 @@ function addToCart(id){
 
 
 
+// ------------------------------------  Total Visitors -----
+let count = JSON.parse(localStorage.getItem('count'))||0
+
+window.addEventListener('load', ()=>{
+    count++
+    localStorage.setItem('count', JSON.stringify(count))
+    // visitors.innerText = count++
+    // user.innerText = client.length
+})
