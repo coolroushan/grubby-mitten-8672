@@ -5,25 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Page</title>
-    <!-- <style>
-    </style> -->
     <style>
       body{
         background-color:#232f3e ;
       }
       #login-main{
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
         display:flex;
         height:500px;
         width: 70%;
         margin: auto;
         margin-top: 100px;
+        /* border: 1px solid red; */
       }
       #Welcome-cont{
         height: 100%;
         width: 50%;
         text-align: center;
-        background-color: rgb(230, 84, 31);
+        background-color: rgb(111, 111, 202);
         color:white;
         
       }
@@ -32,8 +30,6 @@
         font-weight: bold;
       }
       #Welcome-cont>div{
-        background-color: white;
-        color: black;
         width:90%;
         height: 35px;
         margin: auto;
@@ -42,7 +38,6 @@
         font-size: 20px;
         padding-top: 10px;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
       }
       #formDiv{
         height:100%;
@@ -51,8 +46,6 @@
         background-color: aliceblue;
       }
     #signUp>input{
-      font-size: 17px;
-      padding:8px;
         height:30px;
         width:70%;
         margin-bottom: 10px;
@@ -60,12 +53,8 @@
         outline: none;
         border: 0px solid rgb(118, 169, 169);
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
       }
       #signIn>input{
-        font-size: 17px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        padding:8px;
         height:30px;
         width:70%;
         margin-bottom: 10px;
@@ -76,14 +65,13 @@
       }
       button{
         height: 35px;
-        width:150px;
+        width:200px;
         font-size:15px;
         font-weight: bold;
         color: white;
-        background-color: rgb(35,47,62);
+        background-color: rgb(230, 84, 31);
         border: none;
-        margin-left:20px;
-
+        margin-left:10px;
       }
       #img{
         height:70px;
@@ -93,47 +81,10 @@
     </style>
   </head>
   <body>
-    <!-- <div>
-      <button>Sign Up</button>
-      <button>Sign In</button>
-    </div>
-    <form id="signUp">
-      <h1>REGISTER!</h1>
-      <input type="text" id="name" placeholder="Name" required />
-      <br />
-      <input type="email" id="email" placeholder="E-mail" required />
-      <br />
-      <input type="password" id="password" placeholder="Password" required />
-      <br />
-      <input
-        type="password"
-        id="passwordChk"
-        placeholder="Re-enter Password"
-        required
-      />
-      <br />
-      <input type="submit" />
-    </form>
-
-    <form id="signIn">
-      <h1>LOGIN!</h1>
-      <input type="email" id="email1" placeholder="E-mail" required />
-      <br />
-      <input type="password" id="password1" placeholder="Password" required />
-      <br />
-
-      <input type="submit" /> -->
-
-    <!-- </form> -->
     <div id="img"><img style="width:130%" src="HARDWARE CITY.png" alt=""></div>
     <div id="login-main">
       <div id="Welcome-cont">
-        <h1>Welcome User!</h1>
-        <div>Get Exclusive Deals & Offers</div>
-        <div>Get Exclusive Deals & Offers</div>
-        <div>Buy Now Pay Later (Shop on Credit)</div>
-        <div>Avail EMI Facility</div>
-        <div>Cancellation Refund within 24 Hours</div>
+        <h1 style="margin-top:190px">Welcome Admin!</h1>
       </div>
       <div id="formDiv">
         <form id="signUp">
@@ -154,7 +105,7 @@
             required
           />
           <br />
-          <input style="padding:10px;background-color:rgb(35,47,62);color: white;width:73%;height:40px;" type="submit" />
+          <input style="height:35px;background-color:rgb(111, 111, 202)" type="submit" />
         </form>
     
         <form id="signIn">
@@ -164,7 +115,7 @@
           <input type="password" id="password1" placeholder="Password" required />
           <br />
     
-          <input style="padding:10px;background-color:rgb(35,47,62);color: white;width:73%;height:40px;" type="submit" />
+          <input style="height:35px;background-color:rgb(111, 111, 202)" type="submit" />
         </form>
         <br>
         <br>
@@ -194,7 +145,7 @@
     signUp.style.display = "block";
     signIn.style.display = "none";
   });
-  let arr = JSON.parse(localStorage.getItem("user")) || [];
+  let arr = JSON.parse(localStorage.getItem("admin")) || [];
   signUp.addEventListener("submit", function (event) {
     event.preventDefault();
     let obj = {
@@ -208,7 +159,7 @@
     if (obj.password != obj.check_password) {
       alert("password not match");
     } else {
-      localStorage.setItem("user", JSON.stringify(arr));
+      localStorage.setItem("admin", JSON.stringify(arr));
       alert("Sign up successfully");
       signUp.reset();
     }
@@ -229,59 +180,7 @@
       alert("Invalid");
     } else {
       alert("Log in successfully");
-      window.location.assign("./index.html");
+      window.location.assign("./admin.html");
     }
   });
-//   let logInBtn = document.querySelector("div>button:nth-child(2)");
-//   let signUpBtn = document.querySelector("div>button:nth-child(1)");
-//   let signIn = document.querySelector("#signIn");
-//   let signUp = document.querySelector("#signUp");
-//   signIn.style.display = "none";
-//   logInBtn.addEventListener("click", function () {
-//     //console.log("login");
-//     signUp.style.display = "none";
-//     signIn.style.display = "block";
-//   });
-//   signUpBtn.addEventListener("click", function () {
-//     //console.log("signup");
-//     signUp.style.display = "block";
-//     signIn.style.display = "none";
-//   });
-//   let arr = JSON.parse(localStorage.getItem("user")) || [];
-//   signUp.addEventListener("submit", function (event) {
-//     event.preventDefault();
-//     let obj = {
-//       name: signUp.name.value,
-//       email: signUp.email.value,
-//       password: signUp.password.value,
-//       check_password: signUp.passwordChk.value,
-//     };
-//     arr.push(obj);
-//     if (obj.password != obj.check_password) {
-//       alert("password not match");
-//     } else {
-//       localStorage.setItem("user", JSON.stringify(arr));
-//       alert("Sign up successfully");
-//       signUp.reset();
-//     }
-//   });
-
-//   signIn.addEventListener("submit", function (event) {
-//     event.preventDefault();
-//     let obj1 = {
-//       email: signIn.email1.value,
-//       password: signIn.password1.value,
-//     };
-//     // let storeData=localStorage.parse
-//     arr.forEach((el) => {
-//       users = el.email;
-//       userPsw = el.password;
-//     });
-//     if (users != obj1.user && userPsw != obj1.password) {
-//       alert("Invalid");
-//     } else {
-//       alert("Log in successfully");
-//       window.location.assign("./index.html");
-//     }
-//   });
 </script>
