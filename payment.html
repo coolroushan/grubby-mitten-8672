@@ -7,74 +7,139 @@
 	<link rel="stylesheet" type="text/css" href="payment.css">
 </head>
 <body>
-<header>
-	<div class="container">
-		<div class="left">
-			<h3>BILLING ADDRESS</h3>
-			<form>
-				Full name
-				<input id="name" type="text" name="" placeholder="Enter name">
-				Email
-				<input id="email" type="text" name="" placeholder="Enter email">
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	
 
-				Address
-				<input id="address" type="text" name="" placeholder="Enter address">
-				
-				City
-				<input id="city" type="text" name="" placeholder="Enter City">
-				<div id="zip">
-					<label>
-						State
-						<select id="state">
-							<option>Choose State..</option>
-							<option>Rajasthan</option>
-							<option>Hariyana</option>
-							<option>Uttar Pradesh</option>
-							<option>Madhya Pradesh</option>
-						</select>
-					</label>
-						<label>
-						Zip code
-						<input id="zipcode" type="number" name="" placeholder="Zip code">
-					</label>
-				</div>
-			</form>
+<!-------------------------------------------------------Payment Page Div---------------------------------------------------------------->
+
+
+<div class="wrapper">
+
+	<header>
+	  <div class="container">
+		<div class="left">
+		  <h3>BILLING ADDRESS</h3>
+		  <form>
+			Full name
+			<input id="name" class="mustfill" type="text" name="" placeholder="Enter name" >
+			Email
+			<input id="email" class="mustfill" type="text" name="" placeholder="Enter email" >
+	
+			Address
+			<input id="address" class="mustfill" type="text" name="" placeholder="Enter address" >
+			
+			City
+			<input id="city" class="mustfill" type="text" name="" placeholder="Enter City" >
+			<div id="zip">
+			  <label>
+				State
+				<select class="mustfill" id="state" >
+				  <option>Choose State..</option>
+				  <option>Rajasthan</option>
+				  <option>Hariyana</option>
+				  <option>Uttar Pradesh</option>
+				  <option>Madhya Pradesh</option>
+				</select>
+			  </label>
+				<label>
+				Zip code
+				<input class="mustfill" id="zipcode" type="number" name="" placeholder="Zip code" >
+			  </label>
+			</div>
+		  </form>
 		</div>
 		<div class="right">
-			<h3>PAYMENT</h3>
-			<form>
-				Accepted Card <br>
-				<img src="Payment Images/card1.png" width="100">
-				<img src="Payment Images/card2.png" width="50">
-				<br><br>
-
-				Credit card number
-			<input type="text" name="" placeholder="Enter card number">
-				
-				Exp month
-				<input type="text" name="" placeholder="Enter Month">
-				<div id="zip">
-					<label>
-						Exp year
-						<select>
-							<option>Choose Year..</option>
-							<option>2022</option>
-							<option>2023</option>
-							<option>2024</option>
-							<option>2025</option>
-						</select>
-					</label>
-						<label>
-						CVV
-						<input type="number" name="" placeholder="CVV">
-					</label>
-				</div>
-				<input  type="submit" name="" value="Proceed to Checkout">
-			</form>
+		  <h3>PAYMENT</h3>
+		  <form>
+			Accepted Card <br>
+			<img src="Payment Images/card1.png" width="100">
+			<img src="Payment Images/card2.png" width="50">
+			<br><br>
+	
+			Credit card number
+		  <input class="mustfill" type="text" name="" placeholder="Enter card number">
 			
+			Exp month
+			<input class="mustfill" type="text" name="" placeholder="Enter Month" >
+			<div id="zip">
+			  <label>
+				Exp year
+				<select  >
+				  <option>Choose Year..</option>
+				  <option>2022</option>
+				  <option>2023</option>
+				  <option>2024</option>
+				  <option>2025</option>
+				</select>
+			  </label>
+				<label>
+				CVV
+				<input class="mustfill" type="number" name="" placeholder="CVV" >
+			  </label>
+			</div>
+		  </form>
+		  <div class="modal_btns">
+			<button onclick="checkoutdata()" class="success_btn" >
+			  Proceed to Checkout
+			</button>
+		  </div>
 		</div>
+	  </div>
+	</header>
+  
+  <!-------------------------------------------------------- PopUp Menu ---------------------------------------------------------------->
+
+	<div class="modal_wrapper">
+	  <div class="shadow close_btn"></div>
+	  
+	  <div class="modal">
+		<div class="modal_item s_modal">
+		  <div class="close close_btn">
+			<ion-icon name="close"></ion-icon>
+		  </div>
+		  <div class="modal_body">
+			 <div class="s_icon">
+			<ion-icon name="checkmark"></ion-icon>
+		  </div>
+		  <div class="s_text">
+			<h2>Payment Successful</h2>
+			<p>We are delighted to inform you that we received your payment.</p>
+		  </div>
+		  </div>
+		  <div class="s_button">
+			<button  onClick="window.location.href='index.html';"   class="success_btn">Continue</button>
+		  </div>
+		</div>
+		<div class="modal_item e_modal">
+		  <div class="close close_btn">
+			<ion-icon name="close"></ion-icon>
+		  </div>
+		  <div class="modal_body">
+			<div class="s_icon">
+			<ion-icon name="help"></ion-icon>
+		  </div>
+		  
+		  </div>
+		 
+		</div>
+	  </div>
 	</div>
-</header>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 <script src="payment.js"></script>
 </html>
