@@ -1,7 +1,9 @@
 # grubby-mitten-8672
 We are a team of five members and we were given a task to clone industry buying and our cloned website name is Hardware City. And we have completed the website in the span of 5 days. 
 WebsiteLogo-![HARDWARE CITYY](https://user-images.githubusercontent.com/115460736/213990679-58533a0e-d1a7-45ab-ac3d-eb2e7a13d43c.png)
- 
+
+Website Link:- https://animated-cassata-0019dd.netlify.app/
+
 Team Members :- 
 1. Roushan Kumar(TeamLeader)
 2. Ratul Mukherjee
