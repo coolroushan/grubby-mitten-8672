@@ -20,7 +20,7 @@ The tech Stack:-
 Funcitoniality in website :- 
 1. Login and logout
 2. Sort function 
-3. Serach function
+3. Search function
 4. Filter funciton 
 5. Fetching MockApi
 6. CRUD operation 
